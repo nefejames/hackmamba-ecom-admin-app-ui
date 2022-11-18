@@ -1,10 +1,6 @@
-import { useRouter } from "next/router";
-import { Button, Input, VStack, useToast } from "@chakra-ui/react";
+import { Button, Input, VStack } from "@chakra-ui/react";
 
-export default function UpdateProductForm({ product }) {
-  const toast = useToast();
-  const router = useRouter();
-
+export default function UpdateProductForm() {
   return (
     <form onSubmit={handleSubmit}>
       <VStack spacing={6}>
